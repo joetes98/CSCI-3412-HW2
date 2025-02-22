@@ -1,0 +1,37 @@
+
+File Name: rand1000.txt
+Start time: 1740258349.1449738
+End time: 1740258349.14607
+Total time: 0.0010962486267089844
+Number of comparisons: 1982
+
+File Name: rand10000.txt
+Start time: 1740258349.1471674
+End time: 1740258349.161523
+Total time: 0.014355659484863281
+Number of comparisons: 19979
+
+File Name: rand100000.txt
+Start time: 1740258349.1695118
+End time: 1740258349.3540022
+Total time: 0.18449044227600098
+Number of comparisons: 199962
+
+File Name: rand250000.txt
+Start time: 1740258349.3767872
+End time: 1740258349.8717628
+Total time: 0.49497556686401367
+Number of comparisons: 499977
+
+File Name: rand500000.txt
+Start time: 1740258349.9174714
+End time: 1740258350.968676
+Total time: 1.0512046813964844
+Number of comparisons: 999983
+
+File Name: rand1000000.txt
+Start time: 1740258351.063626
+End time: 1740258353.4118638
+Total time: 2.3482377529144287
+Number of comparisons: 1999969
+
