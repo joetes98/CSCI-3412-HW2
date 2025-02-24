@@ -1,4 +1,5 @@
 import time
+import matplotlib as plt
 
 def insertionSort(A):
     count = 0
