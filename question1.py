@@ -122,6 +122,7 @@ def main():
 
     print(df)
 
+    # outputs html table from pandas dataframe
     html = df.to_html()
     #print(html)
 

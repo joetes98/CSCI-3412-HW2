@@ -1,4 +1,14 @@
 # CSCI 3412 HW2
+## Question 1
+###
+The results for each function were calculated in python. We solve for n and input the time t into the python function for squareroot, n<sup>2</sup>, n<sup>3</sup>, and 2<sup>n</sup>.
+
+Log(n) is represented as n = 2<sup>t</sup>. Since the results from this function were too large for python to compute.
+
+nLog(n) used the Lambert W function since this equation has no closed form solution for n. The Scipy module has the lambertw function which allows us the find the value of n.
+
+n!: We loop through every value of n until we find the maximum value which satisfies the equation.
+
 ## Question 2
 ###
 Executing the insertion sort algoritm and merge sort algorithm on data sets of various sizes demonstrates the power of an efficient algorithm.
@@ -96,6 +106,19 @@ The below table shows the exeuction time (in seconds) & the number of comparison
 
 Both the insertion sort and the merge sort have fast execution times for 1,000 and 10,000 data sizes. When sorting the 100000 data set, the insertion increased by about 4 minutes while the merge sort only increase by about 0.4 seconds. The difference between the two sorting algorithms is even further exemplified as the size of the data sets increase, with the insertion taking up to 11 hours for the 1,000,000 while the merge sort only tool 6.7 seconds.
 
+
+## Question 3
+###
+**3.1:** Loop invariant technique means finding a property of alogorithm that is true before each iteration of the algorithm and after each iteration of the alogrithm. If we can prove that both these cases are always true, then the algorithm is correct.
+
+**3.2:** The loop invariant for merge sort is the merged subarrays. Before each iteration, there are two sorted subarrays.  After each iteration, there is a single merged subarray.
+
+**3.3:** For the first iteration, the left and right subarrays have a single element, meaning that these subarrays are sorted.
+
+**3.4:**  When merging the two arrays, we iterate through each array comparing the elements. The smallest available element between the two arrays is selected as the next element in the resulting array. The merged array is then sorted.
+
+**3.5:** The loop terminates after log(n) recursive calls of merge sort. By the maintenance step, we the resulting array is sorted. Therefore, the final array is sorted when the loop terminates.
+
 ## Extra Credit
 ###
 
@@ -103,7 +126,7 @@ Insertion sort has a time complexity of O(n<sup>2</sup>), meaning given a data s
 
 For insertion sort, n<sup>2</sup> is the worst case total instructions. This would occur if the data set is sorted in the opposite order we desire. Therefore it has an upperbound of n<sup>2</sup> instructions/comparison. This can be seen in our data, where the total number of comparison is always less than n<sup>2</sup>.
 
-A similar conclusion can be drawn from the merge sort. Merge sort has a time complexity of O(nlogn), meaning given a data size of n, the algorith will complete nlogn total instructions. Merge sort however will always have a time complexity of O(nlogn) for the best, average, and worst case. This is due to the fact that we are always dividing our list (logn times) down to n lists, then merging the n list into a single list.The data agrees with the analysis, the total number of comparisons for each data set is less than nlogn
+A similar conclusion can be drawn from the merge sort. Merge sort has a time complexity of O(nlogn), meaning given a data size of n, the algorithm will complete nlogn total instructions. Merge sort however will always have a time complexity of O(nlogn) for the best, average, and worst case. This is due to the fact that we are always dividing our list (logn times) down to n lists, then merging the n list into a single list. The data agrees with the analysis, the total number of comparisons for each data set is less than nlogn
 
 As seen by the data, the execution time of the insertion sort exponentially increases with the the data size. This is due to algorithm having an efficiency of O(n<sup>2</sup>) so the number of comparisons is proportional to the square of the data size.
 
